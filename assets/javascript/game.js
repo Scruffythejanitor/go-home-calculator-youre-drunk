@@ -19,6 +19,7 @@ $(document).ready(function() {
       
     function newGame() {  
         total = 0
+        playerTotalUpdate()
         crystalAssign()
         randomNumberGenerator()
         $('.random-number').text(randomNumber)
@@ -47,25 +48,25 @@ $(document).ready(function() {
         total = total + crystalOne
         playerTotalUpdate()
         scoreChecker()
-        return total
+        // return total
     }
     function crystalTwoClickd() {
         total = total + crystalTwo
         playerTotalUpdate()
         scoreChecker()
-        return total
+        // return total
     }
     function crystalThreeClickd() {
         total = total + crystalThree
         playerTotalUpdate()
         scoreChecker()
-        return total
+        // return total
     }
     function crystalFourClickd() {
         total = total + crystalFour
         playerTotalUpdate()
         scoreChecker()
-        return total
+        // return total
     }
     function playerTotalUpdate() {
         $('.player-number').text(total)
@@ -87,10 +88,32 @@ $(document).ready(function() {
         crystalThree = crystalNumberGenerator()
         crystalFour = crystalNumberGenerator()
 
-
-        return crystalOne
-        return crystalTwo
-        return crystalThree
-        return crystalFour
+        duplicateChecker()
     }
+
+    function duplicateChecker() {
+        if (crystalTwo == crystalOne) {
+            crystalAssign()
+        }
+        if (crystalThree == crystalOne) {
+            crystalAssign()
+        }
+        if (crystalFour == crystalOne) {
+            crystalAssign()
+        }
+        if (crystalThree == crystalTwo) {
+            crystalAssign()
+        }
+        if (crystalFour == crystalTwo) {
+            crystalAssign()
+        }
+        if (crystalFour == crystalThree) {
+            crystalAssign()
+        }
+    }
+
+    console.log(crystalOne);
+    console.log(crystalTwo);
+    console.log(crystalThree);
+    console.log(crystalFour);
 })
