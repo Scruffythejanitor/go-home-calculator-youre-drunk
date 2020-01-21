@@ -1,6 +1,6 @@
 body{
-    
-    background-color: lightslategrey;
+    background-image: url("../images/light-veneer.png");
+    /* background-color: lightslategrey; */
 }
 .image-1{
     float: left;
@@ -9,8 +9,8 @@ body{
     background-color: darkorange;
     padding: 35px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 155px;
+    height: 155px;
     box-shadow: 0px 10px rgb(177, 97, 0);
 }
 .image-2{
@@ -20,8 +20,8 @@ body{
     background-color: darkorange;
     padding: 35px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 155px;
+    height: 155px;
     box-shadow: 0px 10px rgb(177, 97, 0);
 }
 .image-3{
@@ -31,8 +31,8 @@ body{
     background-color: darkorange;
     padding: 35px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 155px;
+    height: 155px;
     box-shadow: 0px 10px rgb(177, 97, 0);
 }
 .image-4{
@@ -42,8 +42,8 @@ body{
     background-color: darkorange;
     padding: 35px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 155px;
+    height: 155px;
     box-shadow: 0px 10px rgb(177, 97, 0);
 }
 .random-number{
@@ -75,6 +75,7 @@ body{
     text-align: right;
     font-size: 10px;
     margin: 20px;
+    width: 130px;
 }
 
 .calc{
@@ -82,12 +83,12 @@ body{
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -375px;
-    margin-left: -200px;
+    margin-top: -350px;
+    margin-left: -175px;
     background-color: teal;
-    width: 400px;
-    height: 750px;
-    box-shadow: 0px 20px rgb(13, 85, 85);
+    width: 350px;
+    height: 700px;
+    box-shadow: 0px 20px rgb(13, 85, 85), 0px 25px 10px;
 }
 
 .title{
@@ -97,22 +98,22 @@ body{
     font-family: 'Righteous', cursive;
     font-weight: bolder;
     line-height: 18px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .drunk{
-    font-size: 24px;
+    font-size: 21px;
 }
 .reset-button{
     float: left;
     font-family: 'Righteous', cursive;
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(177, 97, 0);
     margin: 10px 10px 10px 20px;
     border-radius: 30px;
     background-color: darkorange;
-    padding: 5px;
+    padding: 9px;
     text-align: center;
-    width: 360px;
+    width: 310px;
     height: 50px;
     box-shadow: 0px 10px rgb(177, 97, 0);
     
@@ -130,9 +131,13 @@ body{
 }
 .fas{
     color: rgb(177, 97, 0);
+    margin: -6px;
+}
+.fa-beer{
+    margin: -5px -15px 0px 0px;
 }
 .footer{
-    color: rgb(93, 106, 119);
+    color: rgb(205, 207, 178);
     text-align: center;
     position: fixed;
     bottom: 0;
