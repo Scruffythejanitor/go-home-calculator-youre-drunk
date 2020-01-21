@@ -1,0 +1,216 @@
+body{
+    
+    background-color: lightslategrey;
+}
+.image-1{
+    float: left;
+    margin: 10px;
+    border-radius: 90px;
+    background-color: darkorange;
+    padding: 35px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 10px rgb(177, 97, 0);
+}
+.image-2{
+    float: left;
+    margin: 10px;
+    border-radius: 90px;
+    background-color: darkorange;
+    padding: 35px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 10px rgb(177, 97, 0);
+}
+.image-3{
+    float: left;
+    margin: 10px;
+    border-radius: 90px;
+    background-color: darkorange;
+    padding: 35px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 10px rgb(177, 97, 0);
+}
+.image-4{
+    float: left;
+    margin: 10px;
+    border-radius: 90px;
+    background-color: darkorange;
+    padding: 35px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 10px rgb(177, 97, 0);
+}
+.random-number{
+    border-radius: 20px;
+    color: lightyellow;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+.player-number{
+    border-radius: 20px;
+    color: lightyellow;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 20px 0px 20px;
+}
+.win-loss{
+    float: both;
+    width: 140px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 20px;
+    color: lightyellow;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+    font-size: 10px;
+    margin: 20px;
+}
+
+.calc{
+    border-radius: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -375px;
+    margin-left: -200px;
+    background-color: teal;
+    width: 400px;
+    height: 750px;
+    box-shadow: 0px 20px rgb(13, 85, 85);
+}
+
+.title{
+    color: rgb(13, 85, 85);
+    margin: -65px 20px 0 0;
+    float: right;
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    line-height: 19px;
+    font-size: 18px;
+}
+.drunk{
+    font-size: 26.5px;
+}
+.reset-button{
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    color: rgb(177, 97, 0);
+    margin: 10px 10px 10px 20px;
+    border-radius: 30px;
+    background-color: darkorange;
+    padding: 5px;
+    text-align: center;
+    width: 360px;
+    height: 50px;
+    box-shadow: 0px 10px rgb(177, 97, 0);
+    
+}
+
+.player-text, .match-text{
+    color: lightyellow;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    float: left;
+    padding: 35px 10px 10px 30px;
+    margin: 0px -120px 0px 0px;
+    line-height: 15px;
+    word-spacing: -5px;
+}
+.fas{
+    color: rgb(177, 97, 0);
+}
+.footer{
+    color: rgb(93, 106, 119);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+#slideOut {
+    font-family: 'Righteous', cursive;
+    position: fixed;
+    width: 300px;
+    height: 800px;
+    top: 50%;
+    right: -300px;
+    margin-top: -292.5px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.showSlideOut {
+    right: 0px !important;
+}
+
+.slideOutTab {
+    margin-top: 200px;
+    position: absolute;
+    left: -40px;
+    height: 200px;
+    width: 40px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    background: darkorange;
+    border-radius: 15px 0px 0px 15px
+}
+
+.slideOutTab div {
+    color: rgb(177, 97, 0);
+    text-align: center;
+    position: relative;
+    right: 70px;
+    top: 90px;
+    background: darkorange;
+    width: 180px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    writing-mode: lr-tb;
+}
+.modal-body {
+    background-color: #00a3a3;
+    height: 400px;
+    border: 0;
+    
+}
+.modal-title{
+    line-height: 20px;
+    font-size: 22px;
+    
+}
+.modal-content{
+    color: rgb(13, 85, 85);
+    background-color: #00a3a3;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px 0px 0px 30px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+.modal-header{
+    border-bottom-color: rgb(13, 85, 85);
+    border-width: 5px;
+    border-radius: 30px 0px 0px 30px;
+}
+.how-to{
+    font-size: 35px;
+    line-height: 20px;
+}
+.modal-footer{
+    border: 0;
+}

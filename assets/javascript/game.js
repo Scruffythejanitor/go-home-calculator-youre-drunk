@@ -16,6 +16,7 @@ $(document).ready(function() {
     $(".image-2").on('click', crystalTwoClickd)
     $(".image-3").on('click', crystalThreeClickd)
     $(".image-4").on('click', crystalFourClickd)
+    $(".reset-button").on('click', resetGame)
       
     function newGame() {  
         total = 0
@@ -27,7 +28,14 @@ $(document).ready(function() {
         $('.losses').text('Losses: '+ losses)
     }
     
-    
+    function resetGame() {
+        total = 0
+        wins = 0
+        losses = 0
+        $('.wins').text('Wins: '+ wins)
+        $('.losses').text('Losses: '+ losses)
+        $('.player-number').text(total)
+    }
     
     function scoreChecker() {
         if (total === randomNumber) {
@@ -116,4 +124,11 @@ $(document).ready(function() {
     console.log(crystalTwo);
     console.log(crystalThree);
     console.log(crystalFour);
+
+    this.$slideOut = $('#slideOut');
+
+// Slideout show
+this.$slideOut.find('.slideOutTab').on('click', function() {
+  $("#slideOut").toggleClass('showSlideOut');
+});
 })
