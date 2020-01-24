@@ -3,19 +3,19 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
-    var crystalOne;
-    var crystalTwo;
-    var crystalThree;
-    var crystalFour;
+    var buttonOne;
+    var buttonTwo;
+    var buttonThree;
+    var buttonFour;
     var randomNumber;
     var total = 0;
     
     newGame()
 
-    $(".image-1").on('click', crystalOneClickd)
-    $(".image-2").on('click', crystalTwoClickd)
-    $(".image-3").on('click', crystalThreeClickd)
-    $(".image-4").on('click', crystalFourClickd)
+    $(".image-1").on('click', buttonOneClickd)
+    $(".image-2").on('click', buttonTwoClickd)
+    $(".image-3").on('click', buttonThreeClickd)
+    $(".image-4").on('click', buttonFourClickd)
     $(".reset-button").on('click', resetGame)
       
     function newGame() {  
@@ -52,26 +52,26 @@ $(document).ready(function() {
     }
 
 
-    function crystalOneClickd() {
-        total = total + crystalOne
+    function buttonOneClickd() {
+        total = total + buttonOne
         playerTotalUpdate()
         scoreChecker()
         // return total
     }
-    function crystalTwoClickd() {
-        total = total + crystalTwo
+    function buttonTwoClickd() {
+        total = total + buttonTwo
         playerTotalUpdate()
         scoreChecker()
         // return total
     }
-    function crystalThreeClickd() {
-        total = total + crystalThree
+    function buttonThreeClickd() {
+        total = total + buttonThree
         playerTotalUpdate()
         scoreChecker()
         // return total
     }
-    function crystalFourClickd() {
-        total = total + crystalFour
+    function buttonFourClickd() {
+        total = total + buttonFour
         playerTotalUpdate()
         scoreChecker()
         // return total
@@ -82,48 +82,48 @@ $(document).ready(function() {
     }
 
     function randomNumberGenerator() {
-        randomNumber = Math.ceil(Math.random() * 120);
+        randomNumber = Math.ceil(Math.random() * 100) +19;
         return randomNumber
     }
-    function crystalNumberGenerator() {
-        var crystalNumber = Math.ceil(Math.random() * 12);
-        return crystalNumber
+    function buttonNumberGenerator() {
+        var buttonNumbers = Math.ceil(Math.random() * 12);
+        return buttonNumbers
     }
 
     function crystalAssign() {
-        crystalOne = crystalNumberGenerator()
-        crystalTwo = crystalNumberGenerator()
-        crystalThree = crystalNumberGenerator()
-        crystalFour = crystalNumberGenerator()
+        buttonOne = buttonNumberGenerator()
+        buttonTwo = buttonNumberGenerator()
+        buttonThree = buttonNumberGenerator()
+        buttonFour = buttonNumberGenerator()
 
         duplicateChecker()
     }
 
     function duplicateChecker() {
-        if (crystalTwo == crystalOne) {
+        if (buttonTwo == buttonOne) {
             crystalAssign()
         }
-        if (crystalThree == crystalOne) {
+        if (buttonThree == buttonOne) {
             crystalAssign()
         }
-        if (crystalFour == crystalOne) {
+        if (buttonFour == buttonOne) {
             crystalAssign()
         }
-        if (crystalThree == crystalTwo) {
+        if (buttonThree == buttonTwo) {
             crystalAssign()
         }
-        if (crystalFour == crystalTwo) {
+        if (buttonFour == buttonTwo) {
             crystalAssign()
         }
-        if (crystalFour == crystalThree) {
+        if (buttonFour == buttonThree) {
             crystalAssign()
         }
     }
 
-    console.log(crystalOne);
-    console.log(crystalTwo);
-    console.log(crystalThree);
-    console.log(crystalFour);
+    console.log(buttonOne);
+    console.log(buttonTwo);
+    console.log(buttonThree);
+    console.log(buttonFour);
 
     this.$slideOut = $('#slideOut');
 
